@@ -1,3 +1,5 @@
+import { AppRoutersModule } from './app-routers.module';
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -22,12 +24,13 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
     RecipeListComponent,
     RecipeDetailComponent,
     RecipeItemComponent,
-    ShoppingListComponent, 
+    ShoppingListComponent,
     DropDownDirective,
     ShoppingEditComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutersModule
   ],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]
