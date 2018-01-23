@@ -24,14 +24,15 @@
             </button>
             <ul class="dropdown-menu">
                 <li>
-                    <a
-                        style="cursor:pointer;"
-                    >
-                        Add ingredients to shopping list
-                    </a>
+                    <a style="cursor:pointer;">Add ingredients to shopping list</a>
                 </li>
                 <li>
-                    <a style="cursor:pointer">Edit recipe</a>
+                    <a
+                        style="cursor:pointer"
+                        (click)="onClickEdit()"
+                    >
+                        Edit recipe
+                    </a>
                 </li>
                 <li>
                     <a style="cursor:pointer">Delete recipe</a>
