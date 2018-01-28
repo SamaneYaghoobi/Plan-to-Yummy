@@ -36,7 +36,7 @@
                         type="submit"
                         [disabled]="!editForm.valid"
                     >
-                        Add
+                        {{ editMode ? 'Update' : 'Add' }}
                     </button>
                     <button
                         class="btn btn-danger"
