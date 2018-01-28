@@ -41,6 +41,8 @@
                     <button
                         class="btn btn-danger"
                         type="button"
+                        *ngIf="editMode"
+                        (click)="onDelete()"
                     >
                         Delete
                     </button>
