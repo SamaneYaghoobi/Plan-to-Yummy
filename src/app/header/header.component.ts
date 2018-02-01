@@ -21,4 +21,9 @@ export class HeaderComponent implements OnInit {
       }
     );
   }
+
+  onClickFetch() {
+    this.dataStore.getRecipe();
+  }
+
 }
